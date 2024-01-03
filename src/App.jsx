@@ -3,6 +3,8 @@ import {
   MdOutlineKeyboardArrowUp,
 } from 'react-icons/md'
 import { useState } from 'react'
+import image1 from './images/illustration-woman-online-mobile.svg'
+import image2 from './images/bg-pattern-mobile.svg'
 
 const App = () => {
   const [active, setActive] = useState(-1)
@@ -79,14 +81,8 @@ const App = () => {
     <main className='bg-gradient-to-b from-gradient-violet-0 to-gradient-blue-0 min-h-screen w-full flex justify-center items-center p-5 text-base'>
       <div className='bg-white max-w-[390px] md:max-w-[1000px] flex flex-col md:flex-row  justify-center items-center relative rounded-3xl mt-20'>
         <div className='relative bottom-28 md:w-1/2'>
-          <img
-            src='/public/images/illustration-woman-online-desktop.svg'
-            width={240}
-          />
-          <img
-            src='/public/images/bg-pattern-mobile.svg'
-            className='absolute top-28'
-          />
+          <img src={image1} width={240} />
+          <img src={image2} className='absolute top-28' />
         </div>
         <div className='px-6 -mt-14 md:my-12 mb-12 md:mx-12 md:w-1/2'>
           <h1 className='text-center md:text-left font-bold text-4xl mb-6'>
